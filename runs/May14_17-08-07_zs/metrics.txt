@@ -1,2 +1,0 @@
-Epoch	Train Loss	Train Acc	Val Loss	Val Acc	Val Recall	Val F1	Val Pre	Val Rmse	Val R2
-1	0.000000	0.0000	0.928571	0.3571	0.3571	0.2449	0.2738	1.2247	-1.3520

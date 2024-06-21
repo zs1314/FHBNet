@@ -210,18 +210,6 @@ def train_one_epoch(model, data_loader, device, optimizer, loss_function, epoch,
     average_loss = accu_loss.item() / (step + 1)
     accuracy = accu_num.item() / sample_num
 
-    # 将所有预测值和目标值合并为一个张量
-    # all_predictions = torch.cat(accu_predictions, dim=0)
-    # all_targets = torch.cat(accu_targets, dim=0)
-    # # 计算并记录 RMSE
-    # rmse = calculate_rmse(all_predictions.squeeze(dim=1), all_targets)
-    # rmse_per = calculate_rmse_per_class(all_predictions.squeeze(dim=1), all_targets)
-    #
-    # # 每个类别RMSE
-    # for i in range(3):
-    #     print("rmse{}：".format(i), rmse_per[i])
-
-    # f1, precision, recall = calculate_metrics(all_targets, all_predictions.squeeze().long())
     return average_loss, accuracy
 
 @torch.no_grad()

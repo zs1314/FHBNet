@@ -1,5 +1,5 @@
 # 导入相应的库
-taimport argparse
+
 import json
 import math
 import os
@@ -201,7 +201,7 @@ def main(opt):
 if __name__ == '__main__':
     seed_everything(seed=42)
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data-path', type=str, default=r"E:\Work2-FHB\Fhb_regression\data\three-classifer",
+    parser.add_argument('--data-path', type=str, default=r"",
                         help='The data path')
     parser.add_argument('--epochs', type=int, default=200)
     parser.add_argument('--batch-size', type=int, default=4)
@@ -209,7 +209,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr', type=float, default=0.001)
     parser.add_argument('--lrf', type=float, default=0.001)
 
-    parser.add_argument('--weights', type=str, default=r"E:\Work2-FHB\FHB-最终实验结果\all_last_zs\root\FHB-search\runs\all_last_zs\weights\best_model.pth", help='initial weights path')
+    parser.add_argument('--weights', type=str, default=r"", help='initial weights path')
     parser.add_argument('--freeze-layers', type=bool, default=False)
     parser.add_argument('--use_cuda', default=True)
     parser.add_argument('--optimizer', type=str, default='adam')  # sgd,adam,adamw
