@@ -9,7 +9,7 @@ This is the official code of FHBNet: A severity level evaluation model for wheat
 ## Quick start
 ### Install
 1. Install PyTorch=0.4.1 following the [official instructions](https://pytorch.org/)
-2. git clone 
+2. git clone https://github.com/zs1314/FHBNet.git
 3. Install dependencies: pip install -r requirements.txt
 
 ### Data preparation
